@@ -115,3 +115,17 @@ If you’d like, I can also:
 * or help you design your **first lesson plan**
 
 Just tell me 👍
+
+Sure — here’s a polished version, clear and beginner-friendly:
+
+---
+
+### **Exercises — Get Comfortable with Visual Studio**
+
+Create small console applications that:
+
+* Print your **name**
+* Print your **height**
+* Print your **age**
+
+These exercises will help you practice creating projects and using the Console class.
