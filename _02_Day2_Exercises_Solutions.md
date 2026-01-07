@@ -145,3 +145,4 @@ class Program
         Console.WriteLine("Rectangle Area = " + (int.Parse(length) * int.Parse(width)));
     }
 }
+14. Ask: Enter base & height → Output: Triangle area
