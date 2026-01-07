@@ -30,3 +30,14 @@ class Program
         Console.WriteLine("You Live in " + city);
     }
 }
+4. Ask: Enter your favorite number → Output: Result = number × 2
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Your Favorite Number : ");
+        string number = Console.ReadLine();
+
+        Console.WriteLine("Result = " + int.Parse(number) * 2);
+    }
+}
