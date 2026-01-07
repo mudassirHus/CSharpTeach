@@ -113,3 +113,13 @@ class Program
         Console.WriteLine("Remainder = " + (int.Parse(dividend) % int.Parse(divisor)));
     }
 }
+11. Ask: Enter a number → Output: Square
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter a Number : ");
+        string number = Console.ReadLine();
+        Console.WriteLine("Square = " + (int.Parse(number) * int.Parse(number)));
+    }
+}
