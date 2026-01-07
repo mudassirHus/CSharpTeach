@@ -258,3 +258,13 @@ class Program
         Console.WriteLine("Centimeters = " + (int.Parse(meters) * 100));
     }
 }
+24. Ask: Enter kilograms → Output: Grams
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Kilograms : ");
+        string kilograms = Console.ReadLine();
+        Console.WriteLine("Grams = " + (int.Parse(kilograms) * 1000));
+    }
+}
