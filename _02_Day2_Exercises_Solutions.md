@@ -89,3 +89,15 @@ class Program
         Console.WriteLine("Product = " + (int.Parse(firstNumber) * int.Parse(secondNumber)));
     }
 }
+9. Ask: Enter dividend & divisor → Output: Quotient
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Dividend : ");
+        string dividend = Console.ReadLine();
+        Console.Write("Enter Divisor : ");
+        string divisor = Console.ReadLine();
+        Console.WriteLine("Quotient = " + (int.Parse(dividend) / int.Parse(divisor)));
+    }
+}
