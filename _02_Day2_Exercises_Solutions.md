@@ -77,3 +77,15 @@ class Program
         Console.WriteLine("Difference = " + (int.Parse(firstNumber) - int.Parse(secondNumber)));
     }
 }
+8. Ask: Enter two numbers → Output: Product = X × Y
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter First Number : ");
+        string firstNumber = Console.ReadLine();
+        Console.Write("Enter Second Number : ");
+        string secondNumber = Console.ReadLine();
+        Console.WriteLine("Product = " + (int.Parse(firstNumber) * int.Parse(secondNumber)));
+    }
+}
