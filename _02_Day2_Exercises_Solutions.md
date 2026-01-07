@@ -216,3 +216,13 @@ class Program
         Console.WriteLine("Seconds = " + (int.Parse(minutes) * 60));
     }
 }
+20. Ask: Enter days → Output: Hours
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Days : ");
+        string days = Console.ReadLine();
+        Console.WriteLine("Hours = " + (int.Parse(days) * 24));
+    }
+}
