@@ -133,3 +133,15 @@ class Program
         Console.WriteLine("Cube = " + (int.Parse(number) * int.Parse(number) * int.Parse(number)));
     }
 }
+13. Ask: Enter length & width → Output: Rectangle area
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Length : ");
+        string length = Console.ReadLine();
+        Console.Write("Enter Width : ");
+        string width = Console.ReadLine();
+        Console.WriteLine("Rectangle Area = " + (int.Parse(length) * int.Parse(width)));
+    }
+}
