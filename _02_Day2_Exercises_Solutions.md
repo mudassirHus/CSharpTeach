@@ -248,3 +248,13 @@ class Program
         Console.WriteLine("Celsius = " + celsius);
     }
 }
+23. Ask: Enter meters → Output: Centimeters
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Meters : ");
+        string meters = Console.ReadLine();
+        Console.WriteLine("Centimeters = " + (int.Parse(meters) * 100));
+    }
+}
