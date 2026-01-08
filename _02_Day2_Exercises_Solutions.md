@@ -457,3 +457,15 @@ class Program
         Console.WriteLine("Speed = " + (int.Parse(distance) / int.Parse(time)));
     }
 }
+41. Ask: Enter first & last name → Output: Full name
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter First Name : ");
+        string firstName = Console.ReadLine();
+        Console.Write("Enter Last Name : ");
+        string lastName = Console.ReadLine();
+        Console.WriteLine("Full Name = " + firstName + " " + lastName);
+    }
+}
