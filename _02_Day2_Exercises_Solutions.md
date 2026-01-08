@@ -379,3 +379,13 @@ class Program
         Console.WriteLine("Half = " + (int.Parse(number) / 2.0));
     }
 }
+34. Ask: Enter apples → Output: Apples per person (2 people)
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Number of Apples : ");
+        string apples = Console.ReadLine();
+        Console.WriteLine("Apples per Person (2 people) = " + (int.Parse(apples) / 2.0));
+    }
+}
