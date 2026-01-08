@@ -541,3 +541,14 @@ class Program
         Console.WriteLine("New Score = " + (int.Parse(score) + 100));
     }
 }
+48. Ask: Enter steps → Output: Calories (steps × 0.04)
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Number of Steps : ");
+        string steps = Console.ReadLine();
+        double calories = int.Parse(steps) * 0.04;
+        Console.WriteLine("Calories Burned = " + calories);
+    }
+}
