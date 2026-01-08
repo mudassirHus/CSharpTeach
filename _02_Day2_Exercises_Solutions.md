@@ -563,3 +563,16 @@ class Program
         Console.WriteLine("Movie Duration in Hours = " + hours);
     }
 }
+50. Ask: Enter hours & minutes → Output: Total minutes
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Hours : ");
+        string hours = Console.ReadLine();
+        Console.Write("Enter Minutes : ");
+        string minutes = Console.ReadLine();
+        int totalMinutes = (int.Parse(hours) * 60) + int.Parse(minutes);
+        Console.WriteLine("Total Minutes = " + totalMinutes);
+    }
+}
