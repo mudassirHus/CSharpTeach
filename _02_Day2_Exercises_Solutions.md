@@ -123,3 +123,13 @@ class Program
         Console.WriteLine("Square = " + (int.Parse(number) * int.Parse(number)));
     }
 }
+12. Ask: Enter a number → Output: Cube
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter a Number : ");
+        string number = Console.ReadLine();
+        Console.WriteLine("Cube = " + (int.Parse(number) * int.Parse(number) * int.Parse(number)));
+    }
+}
