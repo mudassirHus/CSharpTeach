@@ -506,3 +506,16 @@ class Program
         Console.WriteLine("Percentage = " + percentage + "%");
     }
 }
+45. Ask: Enter price & discount → Output: Final price
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Original Price : ");
+        string price = Console.ReadLine();
+        Console.Write("Enter Discount Percentage : ");
+        string discount = Console.ReadLine();
+        double finalPrice = int.Parse(price) - (int.Parse(price) * (int.Parse(discount) / 100.0));
+        Console.WriteLine("Final Price = " + finalPrice);
+    }
+}
