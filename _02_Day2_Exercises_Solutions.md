@@ -206,3 +206,13 @@ class Program
         Console.WriteLine("Meters = " + (int.Parse(kilometers) * 1000));
     }
 }
+19. Ask: Enter minutes → Output: Seconds
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Minutes : ");
+        string minutes = Console.ReadLine();
+        Console.WriteLine("Seconds = " + (int.Parse(minutes) * 60));
+    }
+}
