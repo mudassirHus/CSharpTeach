@@ -237,3 +237,14 @@ class Program
         Console.WriteLine("Fahrenheit = " + fahrenheit);
     }
 }
+22. Ask: Enter Fahrenheit → Output: Celsius
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Fahrenheit : ");
+        string fahrenheit = Console.ReadLine();
+        double celsius = (int.Parse(fahrenheit) - 32) * 5.0 / 9.0;
+        Console.WriteLine("Celsius = " + celsius);
+    }
+}
