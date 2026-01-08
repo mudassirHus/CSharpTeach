@@ -278,3 +278,15 @@ class Program
         Console.WriteLine("Paise = " + (int.Parse(rupees) * 100));
     }
 }
+26. Ask: Enter hours & rate per hour → Output: Total pay
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Hours Worked : ");
+        string hours = Console.ReadLine();
+        Console.Write("Enter Rate per Hour : ");
+        string rate = Console.ReadLine();
+        Console.WriteLine("Total Pay = " + (int.Parse(hours) * int.Parse(rate)));
+    }
+}
