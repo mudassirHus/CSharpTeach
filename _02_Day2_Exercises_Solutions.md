@@ -196,3 +196,13 @@ class Program
         Console.WriteLine("Average = " + average);
     }
 }
+18. Ask: Enter kilometers → Output: Meters
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Kilometers : ");
+        string kilometers = Console.ReadLine();
+        Console.WriteLine("Meters = " + (int.Parse(kilometers) * 1000));
+    }
+}
