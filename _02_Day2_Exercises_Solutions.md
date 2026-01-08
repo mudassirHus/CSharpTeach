@@ -493,3 +493,16 @@ class Program
         Console.WriteLine("Cost per Person = " + costPerPerson);
     }
 }
+44. Ask: Enter marks & total → Output: Percentage
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Marks Obtained : ");
+        string marks = Console.ReadLine();
+        Console.Write("Enter Total Marks : ");
+        string total = Console.ReadLine();
+        double percentage = (int.Parse(marks) / (double)int.Parse(total)) * 100.0;
+        Console.WriteLine("Percentage = " + percentage + "%");
+    }
+}
