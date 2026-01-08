@@ -41,3 +41,15 @@ class Program
         Console.WriteLine("Result = " + int.Parse(number) * 2);
     }
 }
+5. Ask: Enter two numbers → Output: You entered X and Y
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter First Number : ");
+        string firstNumber = Console.ReadLine();
+        Console.Write("Enter Second Number : ");
+        string secondNumber = Console.ReadLine();
+        Console.WriteLine("You entered " + firstNumber + " and " + secondNumber);
+    }
+}
