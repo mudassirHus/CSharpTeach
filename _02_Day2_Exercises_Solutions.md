@@ -531,3 +531,13 @@ class Program
         Console.WriteLine("Story Line: " + heroName + " uses " + heroPower + " to save the day!");
     }
 }
+47. Ask: Enter score → Output: Score + 100
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Score : ");
+        string score = Console.ReadLine();
+        Console.WriteLine("New Score = " + (int.Parse(score) + 100));
+    }
+}
