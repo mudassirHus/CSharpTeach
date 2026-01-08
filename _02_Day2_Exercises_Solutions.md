@@ -552,3 +552,14 @@ class Program
         Console.WriteLine("Calories Burned = " + calories);
     }
 }
+49. Ask: Enter movie minutes → Output: Hours
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Movie Duration (in minutes) : ");
+        string minutes = Console.ReadLine();
+        double hours = int.Parse(minutes) / 60.0;
+        Console.WriteLine("Movie Duration in Hours = " + hours);
+    }
+}
