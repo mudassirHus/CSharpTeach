@@ -157,3 +157,13 @@ class Program
         Console.WriteLine("Triangle Area = " + (0.5 * int.Parse(baseLength) * int.Parse(height)));
     }
 }
+15. Ask: Enter radius → Output: Circle area (π = 3.14)
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Radius : ");
+        string radius = Console.ReadLine();
+        Console.WriteLine("Circle Area = " + (3.14 * int.Parse(radius) * int.Parse(radius)));
+    }
+}
