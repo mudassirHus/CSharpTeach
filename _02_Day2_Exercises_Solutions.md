@@ -389,3 +389,13 @@ class Program
         Console.WriteLine("Apples per Person (2 people) = " + (int.Parse(apples) / 2.0));
     }
 }
+35. Ask: Enter seconds → Output: Minutes
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Seconds : ");
+        string seconds = Console.ReadLine();
+        Console.WriteLine("Minutes = " + (int.Parse(seconds) / 60.0));
+    }
+}
