@@ -290,3 +290,22 @@ class Program
         Console.WriteLine("Total Pay = " + (int.Parse(hours) * int.Parse(rate)));
     }
 }
+27. Ask: Enter length of side → Output: Area of square
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Amount : ");
+        string amount = Console.ReadLine();
+
+        Console.Write("Enter GST % : ");
+        string gst = Console.ReadLine();
+
+        double ParsedAmount = double.Parse(amount);
+        double ParsedGst = double.Parse(gst);
+
+        double amountWIthGST = ParsedAmount * (ParsedGst / 100.0);
+
+        Console.WriteLine("GST amount : " + (amountWIthGST - ParsedGst));
+    }
+}
