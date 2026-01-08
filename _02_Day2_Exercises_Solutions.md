@@ -347,3 +347,13 @@ class Program
         Console.WriteLine("EMI = " + emi);
     }
 }
+31. Ask: Enter number → Output: Last digit
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter a Number : ");
+        string number = Console.ReadLine();
+        Console.WriteLine("Last Digit = " + (int.Parse(number) % 10));
+    }
+}
