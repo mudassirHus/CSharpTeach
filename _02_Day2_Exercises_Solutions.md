@@ -177,3 +177,22 @@ class Program
         Console.WriteLine("Yearly Salary = " + (int.Parse(monthlySalary) * 12));
     }
 }
+17. Ask: Enter 5 subject marks → Output: Average
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Mark 1 : ");
+        string mark1 = Console.ReadLine();
+        Console.Write("Enter Mark 2 : ");
+        string mark2 = Console.ReadLine();
+        Console.Write("Enter Mark 3 : ");
+        string mark3 = Console.ReadLine();
+        Console.Write("Enter Mark 4 : ");
+        string mark4 = Console.ReadLine();
+        Console.Write("Enter Mark 5 : ");
+        string mark5 = Console.ReadLine();
+        double average = (int.Parse(mark1) + int.Parse(mark2) + int.Parse(mark3) + int.Parse(mark4) + int.Parse(mark5)) / 5.0;
+        Console.WriteLine("Average = " + average);
+    }
+}
