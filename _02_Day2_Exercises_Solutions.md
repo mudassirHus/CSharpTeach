@@ -357,3 +357,15 @@ class Program
         Console.WriteLine("Last Digit = " + (int.Parse(number) % 10));
     }
 }
+32. Ask: Enter two-digit number → Output: Sum of digits
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter a Two-Digit Number : ");
+        string number = Console.ReadLine();
+        int firstDigit = int.Parse(number) / 10;
+        int secondDigit = int.Parse(number) % 10;
+        Console.WriteLine("Sum of Digits = " + (firstDigit + secondDigit));
+    }
+}
