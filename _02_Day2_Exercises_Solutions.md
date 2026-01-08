@@ -268,3 +268,13 @@ class Program
         Console.WriteLine("Grams = " + (int.Parse(kilograms) * 1000));
     }
 }
+25. Ask: Enter rupees → Output: Paise
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Rupees : ");
+        string rupees = Console.ReadLine();
+        Console.WriteLine("Paise = " + (int.Parse(rupees) * 100));
+    }
+}
