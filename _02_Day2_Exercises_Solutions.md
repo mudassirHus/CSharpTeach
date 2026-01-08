@@ -53,3 +53,15 @@ class Program
         Console.WriteLine("You entered " + firstNumber + " and " + secondNumber);
     }
 }
+6. Ask: Enter two numbers → Output: Sum = X + Y
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter First Number : ");
+        string firstNumber = Console.ReadLine();
+        Console.Write("Enter Second Number : ");
+        string secondNumber = Console.ReadLine();
+        Console.WriteLine("Sum = " + (int.Parse(firstNumber) + int.Parse(secondNumber)));
+    }
+}
