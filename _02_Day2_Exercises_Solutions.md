@@ -101,3 +101,15 @@ class Program
         Console.WriteLine("Quotient = " + (int.Parse(dividend) / int.Parse(divisor)));
     }
 }
+10. Ask: Enter two numbers → Output: Remainder
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Dividend : ");
+        string dividend = Console.ReadLine();
+        Console.Write("Enter Divisor : ");
+        string divisor = Console.ReadLine();
+        Console.WriteLine("Remainder = " + (int.Parse(dividend) % int.Parse(divisor)));
+    }
+}
