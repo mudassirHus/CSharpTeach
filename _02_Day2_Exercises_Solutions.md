@@ -469,3 +469,14 @@ class Program
         Console.WriteLine("Full Name = " + firstName + " " + lastName);
     }
 }
+42. Ask: Enter birth year → Output: Age (assume current year = 2025)
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Birth Year : ");
+        string birthYear = Console.ReadLine();
+        int age = 2025 - int.Parse(birthYear);
+        Console.WriteLine("Age = " + age);
+    }
+}
