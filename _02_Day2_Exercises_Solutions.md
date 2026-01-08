@@ -519,3 +519,15 @@ class Program
         Console.WriteLine("Final Price = " + finalPrice);
     }
 }
+46. Ask: Enter hero name & power → Output: Short story line
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Hero Name : ");
+        string heroName = Console.ReadLine();
+        Console.Write("Enter Hero Power : ");
+        string heroPower = Console.ReadLine();
+        Console.WriteLine("Story Line: " + heroName + " uses " + heroPower + " to save the day!");
+    }
+}
