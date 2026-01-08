@@ -167,3 +167,13 @@ class Program
         Console.WriteLine("Circle Area = " + (3.14 * int.Parse(radius) * int.Parse(radius)));
     }
 }
+16. Ask: Enter monthly salary → Output: Yearly salary
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Monthly Salary : ");
+        string monthlySalary = Console.ReadLine();
+        Console.WriteLine("Yearly Salary = " + (int.Parse(monthlySalary) * 12));
+    }
+}
