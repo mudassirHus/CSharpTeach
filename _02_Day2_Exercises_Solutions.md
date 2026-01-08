@@ -324,3 +324,13 @@ class Program
         Console.WriteLine("Simple Interest = " + simpleInterest);
     }
 }
+29. Ask: Enter monthly saving → Output: Yearly saving
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Monthly Saving : ");
+        string monthlySaving = Console.ReadLine();
+        Console.WriteLine("Yearly Saving = " + (int.Parse(monthlySaving) * 12));
+    }
+}
