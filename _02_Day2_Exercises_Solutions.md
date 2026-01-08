@@ -334,3 +334,16 @@ class Program
         Console.WriteLine("Yearly Saving = " + (int.Parse(monthlySaving) * 12));
     }
 }
+30. Ask: Enter loan & months → Output: EMI
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Loan Amount : ");
+        string loan = Console.ReadLine();
+        Console.Write("Enter Number of Months : ");
+        string months = Console.ReadLine();
+        double emi = int.Parse(loan) / int.Parse(months);
+        Console.WriteLine("EMI = " + emi);
+    }
+}
