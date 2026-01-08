@@ -445,3 +445,15 @@ class Program
         Console.WriteLine("Distance = " + (int.Parse(speed) * int.Parse(time)));
     }
 }
+40. Ask: Enter distance & time → Output: Speed
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Distance (in km) : ");
+        string distance = Console.ReadLine();
+        Console.Write("Enter Time (in hours) : ");
+        string time = Console.ReadLine();
+        Console.WriteLine("Speed = " + (int.Parse(distance) / int.Parse(time)));
+    }
+}
