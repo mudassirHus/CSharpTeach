@@ -423,3 +423,13 @@ class Program
         Console.WriteLine("Volume = " + (int.Parse(length) * int.Parse(width) * int.Parse(height)));
     }
 }
+38. Ask: Enter diameter → Output: Radius
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Diameter : ");
+        string diameter = Console.ReadLine();
+        Console.WriteLine("Radius = " + (int.Parse(diameter) / 2.0));
+    }
+}
