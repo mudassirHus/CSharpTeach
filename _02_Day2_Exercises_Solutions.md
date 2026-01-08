@@ -409,3 +409,17 @@ class Program
         Console.WriteLine("Perimeter = " + (4 * int.Parse(side)));
     }
 }
+37. Ask: Enter length, width, height → Output: Volume
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Length : ");
+        string length = Console.ReadLine();
+        Console.Write("Enter Width : ");
+        string width = Console.ReadLine();
+        Console.Write("Enter Height : ");
+        string height = Console.ReadLine();
+        Console.WriteLine("Volume = " + (int.Parse(length) * int.Parse(width) * int.Parse(height)));
+    }
+}
