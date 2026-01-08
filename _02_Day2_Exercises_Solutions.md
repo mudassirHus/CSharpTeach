@@ -369,3 +369,13 @@ class Program
         Console.WriteLine("Sum of Digits = " + (firstDigit + secondDigit));
     }
 }
+33. Ask: Enter number → Output: Half
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter a Number : ");
+        string number = Console.ReadLine();
+        Console.WriteLine("Half = " + (int.Parse(number) / 2.0));
+    }
+}
