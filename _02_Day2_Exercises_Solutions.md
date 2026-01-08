@@ -309,3 +309,18 @@ class Program
         Console.WriteLine("GST amount : " + (amountWIthGST - ParsedGst));
     }
 }
+28. Ask: Enter principal, rate, time → Output: Simple interest
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Principal Amount : ");
+        string principal = Console.ReadLine();
+        Console.Write("Enter Rate of Interest : ");
+        string rate = Console.ReadLine();
+        Console.Write("Enter Time (in years) : ");
+        string time = Console.ReadLine();
+        double simpleInterest = (int.Parse(principal) * int.Parse(rate) * int.Parse(time)) / 100.0;
+        Console.WriteLine("Simple Interest = " + simpleInterest);
+    }
+}
