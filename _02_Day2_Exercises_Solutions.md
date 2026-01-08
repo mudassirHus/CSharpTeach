@@ -433,3 +433,15 @@ class Program
         Console.WriteLine("Radius = " + (int.Parse(diameter) / 2.0));
     }
 }
+39. Ask: Enter speed & time → Output: Distance
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Speed (in km/h) : ");
+        string speed = Console.ReadLine();
+        Console.Write("Enter Time (in hours) : ");
+        string time = Console.ReadLine();
+        Console.WriteLine("Distance = " + (int.Parse(speed) * int.Parse(time)));
+    }
+}
