@@ -480,3 +480,16 @@ class Program
         Console.WriteLine("Age = " + age);
     }
 }
+43. Ask: Enter bill & people → Output: Cost per person
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Total Bill Amount : ");
+        string bill = Console.ReadLine();
+        Console.Write("Enter Number of People : ");
+        string people = Console.ReadLine();
+        double costPerPerson = int.Parse(bill) / int.Parse(people);
+        Console.WriteLine("Cost per Person = " + costPerPerson);
+    }
+}
