@@ -399,3 +399,13 @@ class Program
         Console.WriteLine("Minutes = " + (int.Parse(seconds) / 60.0));
     }
 }
+36. Ask: Enter square side → Output: Perimeter
+class Program
+{
+    public static void Main(string[] args)
+    {
+        Console.Write("Enter Side of Square : ");
+        string side = Console.ReadLine();
+        Console.WriteLine("Perimeter = " + (4 * int.Parse(side)));
+    }
+}
