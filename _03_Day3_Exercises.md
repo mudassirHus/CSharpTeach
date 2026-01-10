@@ -1,4 +1,4 @@
-# Day3 - C# Conditional Statements – 50 Practice Problems
+# Day 3 — C# Conditional Statements – 50 Practice Problems
 
 ## Rules
 
