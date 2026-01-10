@@ -1,15 +1,26 @@
-﻿1. Ask: Enter your Name → Output: Hello, <name> 
+# C# Basic Input–Output Programs (1–50)
+
+---
+
+## 1. Ask: Enter your Name → Output: Hello, <name>
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
         Console.Write("What is Your Name : ");
         string name = Console.ReadLine();
-
-        Console.WriteLine("Hello," +  name);
+        Console.WriteLine("Hello, " + name);
     }
 }
-2. Ask: Enter your age → Output: You will be <age+1> next year
+```
+
+---
+
+## 2. Ask: Enter your age → Output: You will be <age+1> next year
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -19,29 +30,45 @@ class Program
         Console.WriteLine("Next Year you will be : " + (int.Parse(age) + 1));
     }
 }
-3. Ask: Enter your city → Output: You live in
+```
+
+---
+
+## 3. Ask: Enter your city → Output: You live in
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
         Console.Write("Enter Your City : ");
         string city = Console.ReadLine();
-
         Console.WriteLine("You Live in " + city);
     }
 }
-4. Ask: Enter your favorite number → Output: Result = number × 2
+```
+
+---
+
+## 4. Ask: Enter your favorite number → Output: Result = number × 2
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
         Console.Write("Enter Your Favorite Number : ");
         string number = Console.ReadLine();
-
         Console.WriteLine("Result = " + int.Parse(number) * 2);
     }
 }
-5. Ask: Enter two numbers → Output: You entered X and Y
+```
+
+---
+
+## 5. Ask: Enter two numbers → Output: You entered X and Y
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -53,7 +80,13 @@ class Program
         Console.WriteLine("You entered " + firstNumber + " and " + secondNumber);
     }
 }
-6. Ask: Enter two numbers → Output: Sum = X + Y
+```
+
+---
+
+## 6. Ask: Enter two numbers → Output: Sum = X + Y
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -65,7 +98,13 @@ class Program
         Console.WriteLine("Sum = " + (int.Parse(firstNumber) + int.Parse(secondNumber)));
     }
 }
-7. Ask: Enter two numbers → Output: Difference = X − Y
+```
+
+---
+
+## 7. Ask: Enter two numbers → Output: Difference = X − Y
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -77,7 +116,13 @@ class Program
         Console.WriteLine("Difference = " + (int.Parse(firstNumber) - int.Parse(secondNumber)));
     }
 }
-8. Ask: Enter two numbers → Output: Product = X × Y
+```
+
+---
+
+## 8. Ask: Enter two numbers → Output: Product = X × Y
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -89,7 +134,13 @@ class Program
         Console.WriteLine("Product = " + (int.Parse(firstNumber) * int.Parse(secondNumber)));
     }
 }
-9. Ask: Enter dividend & divisor → Output: Quotient
+```
+
+---
+
+## 9. Ask: Enter dividend & divisor → Output: Quotient
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -101,7 +152,13 @@ class Program
         Console.WriteLine("Quotient = " + (int.Parse(dividend) / int.Parse(divisor)));
     }
 }
-10. Ask: Enter two numbers → Output: Remainder
+```
+
+---
+
+## 10. Ask: Enter dividend & divisor → Output: Remainder
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -113,7 +170,13 @@ class Program
         Console.WriteLine("Remainder = " + (int.Parse(dividend) % int.Parse(divisor)));
     }
 }
-11. Ask: Enter a number → Output: Square
+```
+
+---
+
+## 11. Ask: Enter a number → Output: Square
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -123,7 +186,13 @@ class Program
         Console.WriteLine("Square = " + (int.Parse(number) * int.Parse(number)));
     }
 }
-12. Ask: Enter a number → Output: Cube
+```
+
+---
+
+## 12. Ask: Enter a number → Output: Cube
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -133,7 +202,13 @@ class Program
         Console.WriteLine("Cube = " + (int.Parse(number) * int.Parse(number) * int.Parse(number)));
     }
 }
-13. Ask: Enter length & width → Output: Rectangle area
+```
+
+---
+
+## 13. Ask: Enter length & width → Output: Rectangle area
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -145,7 +220,13 @@ class Program
         Console.WriteLine("Rectangle Area = " + (int.Parse(length) * int.Parse(width)));
     }
 }
-14. Ask: Enter base & height → Output: Triangle area
+```
+
+---
+
+## 14. Ask: Enter base & height → Output: Triangle area
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -157,7 +238,13 @@ class Program
         Console.WriteLine("Triangle Area = " + (0.5 * int.Parse(baseLength) * int.Parse(height)));
     }
 }
-15. Ask: Enter radius → Output: Circle area (π = 3.14)
+```
+
+---
+
+## 15. Ask: Enter radius → Output: Circle area (π = 3.14)
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -167,7 +254,13 @@ class Program
         Console.WriteLine("Circle Area = " + (3.14 * int.Parse(radius) * int.Parse(radius)));
     }
 }
-16. Ask: Enter monthly salary → Output: Yearly salary
+```
+
+---
+
+## 16. Ask: Enter monthly salary → Output: Yearly salary
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -177,7 +270,13 @@ class Program
         Console.WriteLine("Yearly Salary = " + (int.Parse(monthlySalary) * 12));
     }
 }
-17. Ask: Enter 5 subject marks → Output: Average
+```
+
+---
+
+## 17. Ask: Enter 5 subject marks → Output: Average
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -192,11 +291,20 @@ class Program
         string mark4 = Console.ReadLine();
         Console.Write("Enter Mark 5 : ");
         string mark5 = Console.ReadLine();
-        double average = (int.Parse(mark1) + int.Parse(mark2) + int.Parse(mark3) + int.Parse(mark4) + int.Parse(mark5)) / 5.0;
+
+        double average = (int.Parse(mark1) + int.Parse(mark2) + int.Parse(mark3)
+                        + int.Parse(mark4) + int.Parse(mark5)) / 5.0;
+
         Console.WriteLine("Average = " + average);
     }
 }
-18. Ask: Enter kilometers → Output: Meters
+```
+
+---
+
+## 18. Ask: Enter kilometers → Output: Meters
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -206,7 +314,13 @@ class Program
         Console.WriteLine("Meters = " + (int.Parse(kilometers) * 1000));
     }
 }
-19. Ask: Enter minutes → Output: Seconds
+```
+
+---
+
+## 19. Ask: Enter minutes → Output: Seconds
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -216,7 +330,13 @@ class Program
         Console.WriteLine("Seconds = " + (int.Parse(minutes) * 60));
     }
 }
-20. Ask: Enter days → Output: Hours
+```
+
+---
+
+## 20. Ask: Enter days → Output: Hours
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -226,7 +346,13 @@ class Program
         Console.WriteLine("Hours = " + (int.Parse(days) * 24));
     }
 }
-21. Ask: Enter Celsius → Output: Fahrenheit
+```
+
+---
+
+## 21. Ask: Enter Celsius → Output: Fahrenheit
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -237,7 +363,13 @@ class Program
         Console.WriteLine("Fahrenheit = " + fahrenheit);
     }
 }
-22. Ask: Enter Fahrenheit → Output: Celsius
+```
+
+---
+
+## 22. Ask: Enter Fahrenheit → Output: Celsius
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -248,7 +380,13 @@ class Program
         Console.WriteLine("Celsius = " + celsius);
     }
 }
-23. Ask: Enter meters → Output: Centimeters
+```
+
+---
+
+## 23. Ask: Enter meters → Output: Centimeters
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -258,7 +396,13 @@ class Program
         Console.WriteLine("Centimeters = " + (int.Parse(meters) * 100));
     }
 }
-24. Ask: Enter kilograms → Output: Grams
+```
+
+---
+
+## 24. Ask: Enter kilograms → Output: Grams
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -268,7 +412,13 @@ class Program
         Console.WriteLine("Grams = " + (int.Parse(kilograms) * 1000));
     }
 }
-25. Ask: Enter rupees → Output: Paise
+```
+
+---
+
+## 25. Ask: Enter rupees → Output: Paise
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -278,7 +428,13 @@ class Program
         Console.WriteLine("Paise = " + (int.Parse(rupees) * 100));
     }
 }
-26. Ask: Enter hours & rate per hour → Output: Total pay
+```
+
+---
+
+## 26. Ask: Enter hours & rate per hour → Output: Total pay
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -290,41 +446,50 @@ class Program
         Console.WriteLine("Total Pay = " + (int.Parse(hours) * int.Parse(rate)));
     }
 }
-27. Ask: Enter length of side → Output: Area of square
+```
+
+---
+
+## 27. Ask: Enter length of side → Output: Area of square
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.Write("Enter Amount : ");
-        string amount = Console.ReadLine();
-
-        Console.Write("Enter GST % : ");
-        string gst = Console.ReadLine();
-
-        double ParsedAmount = double.Parse(amount);
-        double ParsedGst = double.Parse(gst);
-
-        double amountWIthGST = ParsedAmount * (ParsedGst / 100.0);
-
-        Console.WriteLine("GST amount : " + (amountWIthGST - ParsedGst));
+        Console.Write("Enter Side Length : ");
+        string side = Console.ReadLine();
+        Console.WriteLine("Area of Square = " + (int.Parse(side) * int.Parse(side)));
     }
 }
-28. Ask: Enter principal, rate, time → Output: Simple interest
+```
+
+---
+
+## 28. Ask: Enter principal, rate, time → Output: Simple interest
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.Write("Enter Principal Amount : ");
+        Console.Write("Enter Principal : ");
         string principal = Console.ReadLine();
-        Console.Write("Enter Rate of Interest : ");
+        Console.Write("Enter Rate : ");
         string rate = Console.ReadLine();
-        Console.Write("Enter Time (in years) : ");
+        Console.Write("Enter Time : ");
         string time = Console.ReadLine();
-        double simpleInterest = (int.Parse(principal) * int.Parse(rate) * int.Parse(time)) / 100.0;
-        Console.WriteLine("Simple Interest = " + simpleInterest);
+        double si = (int.Parse(principal) * int.Parse(rate) * int.Parse(time)) / 100.0;
+        Console.WriteLine("Simple Interest = " + si);
     }
 }
-29. Ask: Enter monthly saving → Output: Yearly saving
+```
+
+---
+
+## 29. Ask: Enter monthly saving → Output: Yearly saving
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -334,62 +499,97 @@ class Program
         Console.WriteLine("Yearly Saving = " + (int.Parse(monthlySaving) * 12));
     }
 }
-30. Ask: Enter loan & months → Output: EMI
+```
+
+---
+
+## 30. Ask: Enter loan & months → Output: EMI
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
         Console.Write("Enter Loan Amount : ");
         string loan = Console.ReadLine();
-        Console.Write("Enter Number of Months : ");
+        Console.Write("Enter Months : ");
         string months = Console.ReadLine();
-        double emi = int.Parse(loan) / int.Parse(months);
-        Console.WriteLine("EMI = " + emi);
+        Console.WriteLine("EMI = " + (int.Parse(loan) / int.Parse(months)));
     }
 }
-31. Ask: Enter number → Output: Last digit
+```
+
+---
+
+## 31. Ask: Enter number → Output: Last digit
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.Write("Enter a Number : ");
+        Console.Write("Enter Number : ");
         string number = Console.ReadLine();
         Console.WriteLine("Last Digit = " + (int.Parse(number) % 10));
     }
 }
-32. Ask: Enter two-digit number → Output: Sum of digits
+```
+
+---
+
+## 32. Ask: Enter two-digit number → Output: Sum of digits
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.Write("Enter a Two-Digit Number : ");
+        Console.Write("Enter Two-Digit Number : ");
         string number = Console.ReadLine();
-        int firstDigit = int.Parse(number) / 10;
-        int secondDigit = int.Parse(number) % 10;
-        Console.WriteLine("Sum of Digits = " + (firstDigit + secondDigit));
+        int first = int.Parse(number) / 10;
+        int second = int.Parse(number) % 10;
+        Console.WriteLine("Sum of Digits = " + (first + second));
     }
 }
-33. Ask: Enter number → Output: Half
+```
+
+---
+
+## 33. Ask: Enter number → Output: Half
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.Write("Enter a Number : ");
+        Console.Write("Enter Number : ");
         string number = Console.ReadLine();
         Console.WriteLine("Half = " + (int.Parse(number) / 2.0));
     }
 }
-34. Ask: Enter apples → Output: Apples per person (2 people)
+```
+
+---
+
+## 34. Ask: Enter apples → Output: Apples per person (2 people)
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.Write("Enter Number of Apples : ");
+        Console.Write("Enter Apples : ");
         string apples = Console.ReadLine();
-        Console.WriteLine("Apples per Person (2 people) = " + (int.Parse(apples) / 2.0));
+        Console.WriteLine("Apples per Person = " + (int.Parse(apples) / 2.0));
     }
 }
-35. Ask: Enter seconds → Output: Minutes
+```
+
+---
+
+## 35. Ask: Enter seconds → Output: Minutes
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -399,17 +599,29 @@ class Program
         Console.WriteLine("Minutes = " + (int.Parse(seconds) / 60.0));
     }
 }
-36. Ask: Enter square side → Output: Perimeter
+```
+
+---
+
+## 36. Ask: Enter square side → Output: Perimeter
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.Write("Enter Side of Square : ");
+        Console.Write("Enter Side : ");
         string side = Console.ReadLine();
         Console.WriteLine("Perimeter = " + (4 * int.Parse(side)));
     }
 }
-37. Ask: Enter length, width, height → Output: Volume
+```
+
+---
+
+## 37. Ask: Enter length, width, height → Output: Volume
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -423,7 +635,13 @@ class Program
         Console.WriteLine("Volume = " + (int.Parse(length) * int.Parse(width) * int.Parse(height)));
     }
 }
-38. Ask: Enter diameter → Output: Radius
+```
+
+---
+
+## 38. Ask: Enter diameter → Output: Radius
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -433,105 +651,157 @@ class Program
         Console.WriteLine("Radius = " + (int.Parse(diameter) / 2.0));
     }
 }
-39. Ask: Enter speed & time → Output: Distance
+```
+
+---
+
+## 39. Ask: Enter speed & time → Output: Distance
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.Write("Enter Speed (in km/h) : ");
+        Console.Write("Enter Speed : ");
         string speed = Console.ReadLine();
-        Console.Write("Enter Time (in hours) : ");
+        Console.Write("Enter Time : ");
         string time = Console.ReadLine();
         Console.WriteLine("Distance = " + (int.Parse(speed) * int.Parse(time)));
     }
 }
-40. Ask: Enter distance & time → Output: Speed
+```
+
+---
+
+## 40. Ask: Enter distance & time → Output: Speed
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.Write("Enter Distance (in km) : ");
+        Console.Write("Enter Distance : ");
         string distance = Console.ReadLine();
-        Console.Write("Enter Time (in hours) : ");
+        Console.Write("Enter Time : ");
         string time = Console.ReadLine();
         Console.WriteLine("Speed = " + (int.Parse(distance) / int.Parse(time)));
     }
 }
-41. Ask: Enter first & last name → Output: Full name
+```
+
+---
+
+## 41. Ask: Enter first & last name → Output: Full name
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
         Console.Write("Enter First Name : ");
-        string firstName = Console.ReadLine();
+        string first = Console.ReadLine();
         Console.Write("Enter Last Name : ");
-        string lastName = Console.ReadLine();
-        Console.WriteLine("Full Name = " + firstName + " " + lastName);
+        string last = Console.ReadLine();
+        Console.WriteLine("Full Name = " + first + " " + last);
     }
 }
-42. Ask: Enter birth year → Output: Age (assume current year = 2025)
+```
+
+---
+
+## 42. Ask: Enter birth year → Output: Age (current year = 2025)
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
         Console.Write("Enter Birth Year : ");
-        string birthYear = Console.ReadLine();
-        int age = 2025 - int.Parse(birthYear);
-        Console.WriteLine("Age = " + age);
+        string year = Console.ReadLine();
+        Console.WriteLine("Age = " + (2025 - int.Parse(year)));
     }
 }
-43. Ask: Enter bill & people → Output: Cost per person
+```
+
+---
+
+## 43. Ask: Enter bill & people → Output: Cost per person
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.Write("Enter Total Bill Amount : ");
+        Console.Write("Enter Bill : ");
         string bill = Console.ReadLine();
-        Console.Write("Enter Number of People : ");
+        Console.Write("Enter People : ");
         string people = Console.ReadLine();
-        double costPerPerson = int.Parse(bill) / int.Parse(people);
-        Console.WriteLine("Cost per Person = " + costPerPerson);
+        Console.WriteLine("Cost per Person = " + (int.Parse(bill) / int.Parse(people)));
     }
 }
-44. Ask: Enter marks & total → Output: Percentage
+```
+
+---
+
+## 44. Ask: Enter marks & total → Output: Percentage
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.Write("Enter Marks Obtained : ");
+        Console.Write("Enter Marks : ");
         string marks = Console.ReadLine();
-        Console.Write("Enter Total Marks : ");
+        Console.Write("Enter Total : ");
         string total = Console.ReadLine();
-        double percentage = (int.Parse(marks) / (double)int.Parse(total)) * 100.0;
+        double percentage = (int.Parse(marks) / (double)int.Parse(total)) * 100;
         Console.WriteLine("Percentage = " + percentage + "%");
     }
 }
-45. Ask: Enter price & discount → Output: Final price
+```
+
+---
+
+## 45. Ask: Enter price & discount → Output: Final price
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.Write("Enter Original Price : ");
+        Console.Write("Enter Price : ");
         string price = Console.ReadLine();
-        Console.Write("Enter Discount Percentage : ");
+        Console.Write("Enter Discount % : ");
         string discount = Console.ReadLine();
-        double finalPrice = int.Parse(price) - (int.Parse(price) * (int.Parse(discount) / 100.0));
+        double finalPrice = int.Parse(price) - (int.Parse(price) * int.Parse(discount) / 100.0);
         Console.WriteLine("Final Price = " + finalPrice);
     }
 }
-46. Ask: Enter hero name & power → Output: Short story line
+```
+
+---
+
+## 46. Ask: Enter hero name & power → Output: Short story line
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
         Console.Write("Enter Hero Name : ");
-        string heroName = Console.ReadLine();
-        Console.Write("Enter Hero Power : ");
-        string heroPower = Console.ReadLine();
-        Console.WriteLine("Story Line: " + heroName + " uses " + heroPower + " to save the day!");
+        string hero = Console.ReadLine();
+        Console.Write("Enter Power : ");
+        string power = Console.ReadLine();
+        Console.WriteLine(hero + " uses " + power + " to save the day!");
     }
 }
-47. Ask: Enter score → Output: Score + 100
+```
+
+---
+
+## 47. Ask: Enter score → Output: Score + 100
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -541,29 +811,45 @@ class Program
         Console.WriteLine("New Score = " + (int.Parse(score) + 100));
     }
 }
-48. Ask: Enter steps → Output: Calories (steps × 0.04)
+```
+
+---
+
+## 48. Ask: Enter steps → Output: Calories (steps × 0.04)
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.Write("Enter Number of Steps : ");
+        Console.Write("Enter Steps : ");
         string steps = Console.ReadLine();
-        double calories = int.Parse(steps) * 0.04;
-        Console.WriteLine("Calories Burned = " + calories);
+        Console.WriteLine("Calories Burned = " + (int.Parse(steps) * 0.04));
     }
 }
-49. Ask: Enter movie minutes → Output: Hours
+```
+
+---
+
+## 49. Ask: Enter movie minutes → Output: Hours
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
     {
-        Console.Write("Enter Movie Duration (in minutes) : ");
+        Console.Write("Enter Movie Minutes : ");
         string minutes = Console.ReadLine();
-        double hours = int.Parse(minutes) / 60.0;
-        Console.WriteLine("Movie Duration in Hours = " + hours);
+        Console.WriteLine("Hours = " + (int.Parse(minutes) / 60.0));
     }
 }
-50. Ask: Enter hours & minutes → Output: Total minutes
+```
+
+---
+
+## 50. Ask: Enter hours & minutes → Output: Total minutes
+
+```csharp
 class Program
 {
     public static void Main(string[] args)
@@ -572,7 +858,8 @@ class Program
         string hours = Console.ReadLine();
         Console.Write("Enter Minutes : ");
         string minutes = Console.ReadLine();
-        int totalMinutes = (int.Parse(hours) * 60) + int.Parse(minutes);
-        Console.WriteLine("Total Minutes = " + totalMinutes);
+        Console.WriteLine("Total Minutes = " + (int.Parse(hours) * 60 + int.Parse(minutes)));
     }
 }
+```
+
