@@ -1,0 +1,186 @@
+﻿# Day 3: Conditional Statements in C#
+
+Conditional statements are used to make **decisions** in a program.
+They allow the program to execute different code based on different conditions.
+
+In simple words:
+If something is true → do this  
+If something is false → do something else
+
+---
+
+## 1. if Statement
+
+Used when you want to run code only when a condition is true.
+
+Syntax:
+if(condition)
+{
+    // code
+}
+
+Example:
+int age = 20;
+if(age >= 18)
+{
+    Console.WriteLine("Eligible to vote");
+}
+
+---
+
+## 2. if-else Statement
+
+Used when you have two paths.
+
+Syntax:
+if(condition)
+{
+    // true block
+}
+else
+{
+    // false block
+}
+
+Example:
+int age = 15;
+if(age >= 18)
+{
+    Console.WriteLine("Can vote");
+}
+else
+{
+    Console.WriteLine("Cannot vote");
+}
+
+---
+
+## 3. else-if Ladder
+
+Used when there are multiple conditions.
+
+Example:
+int marks = 72;
+
+if(marks >= 90)
+    Console.WriteLine("Grade A");
+else if(marks >= 75)
+    Console.WriteLine("Grade B");
+else if(marks >= 60)
+    Console.WriteLine("Grade C");
+else
+    Console.WriteLine("Fail");
+
+Important: Conditions are checked **top to bottom**. First true wins.
+
+---
+
+## 4. Nested if
+
+if inside another if.
+
+Example:
+int age = 25;
+bool hasLicense = true;
+
+if(age >= 18)
+{
+    if(hasLicense)
+        Console.WriteLine("You can drive");
+    else
+        Console.WriteLine("Get license");
+}
+else
+{
+    Console.WriteLine("Underage");
+}
+
+---
+
+## 5. Ternary Operator (?:)
+
+Short form of if-else.
+
+Syntax:
+condition ? value_if_true : value_if_false;
+
+Example:
+int age = 20;
+string result = (age >= 18) ? "Adult" : "Minor";
+Console.WriteLine(result);
+
+---
+
+## 6. switch Statement
+
+Used when comparing one variable with many fixed values.
+
+Example:
+int day = 3;
+
+switch(day)
+{
+    case 1:
+        Console.WriteLine("Monday");
+        break;
+    case 2:
+        Console.WriteLine("Tuesday");
+        break;
+    case 3:
+        Console.WriteLine("Wednesday");
+        break;
+    default:
+        Console.WriteLine("Invalid day");
+        break;
+}
+
+Note: break is important to stop execution.
+
+---
+
+## 7. Relational Operators
+
+==  equal to  
+!=  not equal to  
+>   greater than  
+<   less than  
+>=  greater or equal  
+<=  less or equal  
+
+---
+
+## 8. Logical Operators
+
+&&  AND  
+||  OR  
+!   NOT  
+
+Example:
+int age = 25;
+bool hasID = true;
+
+if(age >= 18 && hasID)
+{
+    Console.WriteLine("Entry allowed");
+}
+
+---
+
+## 9. Common Mistakes
+
+- Using = instead of ==
+- Forgetting break in switch
+- Wrong order in else-if
+- Writing too much logic in ternary
+
+---
+
+## Key Takeaways
+
+- Conditions make programs smart
+- if → single condition
+- if-else → two paths
+- else-if → multiple paths
+- switch → fixed value matching
+- Ternary → shortcut for if-else
+- Order of conditions matters
