@@ -10,7 +10,7 @@
   - `if-else`
   - `else-if`
   - `switch`
-  - ternary operator
+  - `ternary operator`
 - Do **not** use loops.
 - Do **not** use arrays or collections.
 - Write clean and readable code.
