@@ -1,4 +1,22 @@
-﻿# C# Conditional Statements – 50 Practice Problems
+# Day3 - C# Conditional Statements – 50 Practice Problems
+
+## Rules
+
+- Use `Console.ReadLine()` for input.
+- Use `Console.WriteLine()` for output.
+- Use proper data types (`int`, `double`, `char`, `string`).
+- Use only conditional statements:
+  - `if`
+  - `if-else`
+  - `else-if`
+  - `switch`
+  - ternary operator
+- Do **not** use loops.
+- Do **not** use arrays or collections.
+- Write clean and readable code.
+- One program per problem.
+
+---
 
 ## Section 1: Basic if (1–10)
 
@@ -70,3 +88,14 @@
 46. Largest of two numbers using ternary.
 47. Pass or fail using ternary.
 48. Age classification using nested ternary.
+49. Positive or negative using ternary.
+
+---
+
+## 🎯 Goal
+
+- Master decision-making logic in C# 🧠  
+- Understand when to use each conditional type  
+- Improve logical thinking and problem-solving  
+- Build patience and consistency while coding ⏳  
+- Strengthen fundamentals for interviews and real-world applications 🚀
