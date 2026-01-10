@@ -128,7 +128,7 @@ This README provides quick navigation links to all major topics covered in
 - [Key Takeaways](./_02_Day2.md#key-takeaways)
 
 ---
-# Create README with hyperlinks to each question in _02_Day2_Exercises.md
+# 02_Day2_Exercises.md
 
 readme = """# Day 2 — Exercises Index (Console Input/Output)
 
