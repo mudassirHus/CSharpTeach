@@ -108,18 +108,6 @@ Languages using CLR include:
 
 ---
 
-If you’d like, I can also:
-
-* convert this into a **teaching-friendly handout**
-* simplify it for **beginner students**
-* or help you design your **first lesson plan**
-
-Just tell me 👍
-
-Sure — here’s a polished version, clear and beginner-friendly:
-
----
-
 ### **Exercises — Get Comfortable with Visual Studio**
 
 Create small console applications that:
