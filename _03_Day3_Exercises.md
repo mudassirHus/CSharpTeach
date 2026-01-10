@@ -48,7 +48,7 @@
 
 ---
 
-## Section 3: else–if Ladder (21–35)
+## Section 3: if-else–if Ladder (21–35)
 
 21. Check if a number is positive, negative, or zero.
 22. Find the largest of three numbers.
