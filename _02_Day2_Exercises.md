@@ -1,101 +1,77 @@
-# C# Conditional Statements – 50 Practice Problems
+# Day 2 — C# Console Input/Output Practice Exercises
 
 ## Rules
-
-- Use `Console.ReadLine()` for input.
-- Use `Console.WriteLine()` for output.
-- Use proper data types (`int`, `double`, `char`, `string`).
-- Use only conditional statements:
-  - `if`
-  - `if-else`
-  - `else-if`
-  - `switch`
-  - ternary operator
-- Do **not** use loops.
-- Do **not** use arrays or collections.
-- Write clean and readable code.
-- One program per problem.
+- Use only `Console.WriteLine`, `Console.ReadLine`
+- Use `int.Parse`, `double.Parse`, etc.
+- **No loops**
+- **No conditions**
 
 ---
 
-## Section 1: Basic if (1–10)
+## 📘 Exercises
 
-1. Check if a number is positive.
-2. Check if a number is negative.
-3. Check if a number is zero.
-4. Check if a number is greater than 100.
-5. Check if a number is even.
-6. Check if a number is odd.
-7. Check if a character is a vowel.
-8. Check voting eligibility (age ≥ 18).
-9. Check if a number is divisible by 5.
-10. Check if a year is divisible by 4.
+1. Ask: What is your name? → Output: Hello \<name\>
+2. Ask: Enter your age → Output: You will be \<age+1\> next year
+3. Ask: Enter your city → Output: You live in \<city\>
+4. Ask: Enter your favorite number → Output: Result = number × 2
+5. Ask: Enter two numbers → Output: You entered X and Y
+6. Ask: Enter two numbers → Output: Sum = X + Y
+7. Ask: Enter two numbers → Output: Difference = X − Y
+8. Ask: Enter two numbers → Output: Product = X × Y
+9. Ask: Enter dividend & divisor → Output: Quotient
+10. Ask: Enter two numbers → Output: Remainder
 
----
+11. Ask: Enter a number → Output: Square
+12. Ask: Enter a number → Output: Cube
+13. Ask: Enter length & width → Output: Rectangle area
+14. Ask: Enter base & height → Output: Triangle area
+15. Ask: Enter radius → Output: Circle area (π = 3.14)
+16. Ask: Enter monthly salary → Output: Yearly salary
+17. Ask: Enter 5 subject marks → Output: Average
+18. Ask: Enter kilometers → Output: Meters
+19. Ask: Enter minutes → Output: Seconds
+20. Ask: Enter days → Output: Hours
 
-## Section 2: if–else (11–20)
+21. Ask: Enter Celsius → Output: Fahrenheit
+22. Ask: Enter Fahrenheit → Output: Celsius
+23. Ask: Enter meters → Output: Centimeters
+24. Ask: Enter kilograms → Output: Grams
+25. Ask: Enter rupees → Output: Paise
+26. Ask: Enter price & quantity → Output: Total cost
+27. Ask: Enter amount & GST% → Output: GST amount
+28. Ask: Enter principal, rate, time → Output: Simple interest
+29. Ask: Enter monthly saving → Output: Yearly saving
+30. Ask: Enter loan & months → Output: EMI
 
-11. Check if a number is even or odd.
-12. Check if a number is positive or negative.
-13. Check pass or fail (marks ≥ 40).
-14. Check if a number is greater than 50.
-15. Check if a character is uppercase or lowercase.
-16. Check if a number is divisible by 3.
-17. Check if a person is adult or minor.
-18. Check if two numbers are equal.
-19. Check leap year (proper rule).
-20. Check if temperature is hot (>30) or cold.
+31. Ask: Enter number → Output: Last digit
+32. Ask: Enter two-digit number → Output: Sum of digits
+33. Ask: Enter number → Output: Half
+34. Ask: Enter apples → Output: Apples per person (2 people)
+35. Ask: Enter seconds → Output: Minutes
+36. Ask: Enter square side → Output: Perimeter
+37. Ask: Enter length, width, height → Output: Volume
+38. Ask: Enter diameter → Output: Radius
+39. Ask: Enter speed & time → Output: Distance
+40. Ask: Enter distance & time → Output: Speed
 
----
-
-## Section 3: else–if Ladder (21–35)
-
-21. Check if a number is positive, negative, or zero.
-22. Find the largest of three numbers.
-23. Find the smallest of three numbers.
-24. Check divisibility by 2, 3, or neither.
-25. Categorize age: Child / Teen / Adult / Senior.
-26. Print grade (A / B / C / D / F).
-27. Classify marks: Excellent / Good / Average / Poor.
-28. Result: Distinction / Pass / Fail.
-29. Convert percentage to class category.
-30. Scholarship eligibility levels.
-31. Character: Vowel / Consonant / Invalid.
-32. Input type: Digit / Alphabet / Special Character.
-33. Day type: Weekday / Weekend.
-34. Time of day classification.
-35. Traffic light action.
-
----
-
-## Section 4: switch Statement (36–44)
-
-36. Day name from day number (1–7).
-37. Month name from month number (1–12).
-38. Calculator using operator (+, −, ×, ÷).
-39. Number in words (1–5).
-40. Vowel or consonant check.
-41. Banking menu operations.
-42. Grade display using switch.
-43. Traffic signal using switch.
-44. Season based on month.
+41. Ask: Enter first & last name → Output: Full name
+42. Ask: Enter birth year → Output: Age (assume current year = 2025)
+43. Ask: Enter bill & people → Output: Cost per person
+44. Ask: Enter marks & total → Output: Percentage
+45. Ask: Enter price & discount → Output: Final price
+46. Ask: Enter hero name & power → Output: Short story line
+47. Ask: Enter score → Output: Score + 100
+48. Ask: Enter steps → Output: Calories (steps × 0.04)
+49. Ask: Enter movie minutes → Output: Hours
+50. Ask: Enter hours & minutes → Output: Total minutes
 
 ---
 
-## Section 5: Ternary Operator (45–49)
+### 🎯 Goal
+These exercises strengthen:
+- Console input/output
+- Parsing user input
+- Basic arithmetic
+- Understanding data types (Day 2 concepts)
 
-45. Even or odd using ternary operator.
-46. Largest of two numbers using ternary.
-47. Pass or fail using ternary.
-48. Age classification using nested ternary.
-49. Positive or negative using ternary.
-
----
-
-## 🎯 Goal
-
-- Master decision-making logic in C# 🧠  
-- Understand when to use each conditional type  
-- Improve logical thinking and problem-solving  
-- Build patience and consistency while coding ⏳  
-- Strengthen fundamentals for interviews and real-world applications 🚀
+👉 Complete **without loops or conditions**.
