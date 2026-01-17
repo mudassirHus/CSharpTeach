@@ -88,7 +88,6 @@
 46. Largest of two numbers using ternary.
 47. Pass or fail using ternary.
 48. Age classification using nested ternary.
-49. Positive or negative using ternary.
 
 ---
 
