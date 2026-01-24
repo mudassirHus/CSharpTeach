@@ -3,7 +3,7 @@
 ## 📌 Instructions
 
 👉 Follow these guidelines while solving the patterns:
-- Use `Console.WriteLine()` for output
+- Use `Console.WriteLine()` and `Console.Write()` for output
 - Practice using:
   - Single loops
   - Nested loops
@@ -21,14 +21,14 @@
 ## 1. Print numbers from 1 to 10.
 
 ```sharp
-    *****
+*****
 ```
 ---
 
 ## 2. Print N stars in a single line (N = 7).
 
 ```sharp
-    *******
+*******
 ```
 
 ---
