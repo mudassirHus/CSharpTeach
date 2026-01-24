@@ -20,14 +20,14 @@
 
 ## 1. Print numbers from 1 to 10.
 
-```csharp
+```sharp
 *****
 ```
 ---
 
 ## 2. Print N stars in a single line (N = 7).
 
-```csharp
+```sharp
 *******
 ```
 
@@ -35,7 +35,7 @@
 
 ## 3. Print 5 stars vertically.
 
-```csharp
+```sharp
 *
 *
 *
