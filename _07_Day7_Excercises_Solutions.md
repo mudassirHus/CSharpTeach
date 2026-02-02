@@ -459,7 +459,6 @@ for (int k = 0; k < arr.Length; k++)
 ---
 # Phase 3: Pattern and Frequency Thinking Problems
 ---
-
 ## 16. Print unique elements in an array.
 
 ```sharp
@@ -566,6 +565,7 @@ for (int i = 0; i < arr.Length; i++)
 ---
 # Phase 4: 2D Array Problems
 ---
+
 ## 20. Read and print elements of a 2D array.
 
 ```sharp
