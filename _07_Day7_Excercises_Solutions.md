@@ -456,5 +456,307 @@ for (int k = 0; k < arr.Length; k++)
 }
 
 ```
+---
 
+## 16. Print unique elements in an array.
+
+```sharp
+Console.Write("Enter the size of an Array : ");
+int size = int.Parse(Console.ReadLine());
+int[] arr = new int[size];
+
+for (int i = 0; i < arr.Length; i++)
+{
+    Console.Write($"Enter element {i} : ");
+    arr[i] = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine("The unique elements in the array are : ");
+for (int i = 0; i < arr.Length; i++)
+{
+    bool isUnique = true;
+    for (int j = 0; j < arr.Length; j++)
+    {
+        if (i != j && arr[i] == arr[j])
+        {
+            isUnique = false;
+            break;
+        }
+    }
+    if (isUnique)
+    {
+        Console.WriteLine(arr[i]);
+    }
+}
+```
+
+---
+
+## 17. Find the frequency of each element in an array.
+
+```sharp
+Console.Write("Enter the size of an Array : ");
+int size = int.Parse(Console.ReadLine());
+int[] arr = new int[size];
+
+for (int i = 0; i < arr.Length; i++)
+{
+    Console.Write($"Enter element {i} : ");
+    arr[i] = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine("The frequency of each element in the array is : ");
+bool[] visited = new bool[arr.Length];
+
+for (int i = 0; i < arr.Length; i++)
+{
+    if (visited[i])
+    {
+        continue;
+    }
+
+    int count = 1;
+    for (int j = i + 1; j < arr.Length; j++)
+    {
+        if (arr[i] == arr[j])
+        {
+            count++;
+            visited[j] = true;
+        }
+    }
+
+    Console.WriteLine($"Element {arr[i]} occurs {count} times");
+}
+```
+
+---
+
+## 19. Find pairs of elements whose sum is equal to a given value.
+
+```sharp
+Console.Write("Enter the size of an Array : ");
+int size = int.Parse(Console.ReadLine());
+int[] arr = new int[size];
+
+for (int i = 0; i < arr.Length; i++)
+{
+    Console.Write($"Enter element {i} : ");
+    arr[i] = int.Parse(Console.ReadLine());
+}
+
+Console.WriteLine("Enter the target sum : ");
+int targetSum = int.Parse(Console.ReadLine());
+
+Console.WriteLine($"The pairs in the array whose sum is equal to {targetSum} are : ");
+for (int i = 0; i < arr.Length; i++)
+{
+    for (int j = i + 1; j < arr.Length; j++)
+    {
+        if (arr[i] + arr[j] == targetSum)
+        {
+            Console.WriteLine($"({arr[i]}, {arr[j]})");
+        }
+    }
+}
+
+```
+
+---
+
+## 20. Read and print elements of a 2D array.
+
+```sharp
+Console.WriteLine("Enter number of rows:");
+int rows = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Enter number of columns:");
+int cols = int.Parse(Console.ReadLine());
+
+int[,] array = new int[rows, cols];
+
+Console.WriteLine("Enter the elements of the array:");
+for (int i = 0; i < rows; i++)
+{
+    for (int j = 0; j < cols; j++)
+    {
+        array[i, j] = int.Parse(Console.ReadLine());
+    }
+}
+
+Console.WriteLine("The elements of the array are:");
+for (int i = 0; i < rows; i++)
+{
+    for (int j = 0; j < cols; j++)
+    {
+        Console.Write(array[i, j] + " ");
+    }
+    Console.WriteLine();
+}
+```
+
+---
+
+## 21. Find the sum of all elements in a 2D array.
+
+```sharp
+Console.WriteLine("Enter number of rows:");
+int rows = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Enter number of columns:");
+int cols = int.Parse(Console.ReadLine());
+
+int[,] array = new int[rows, cols];
+
+Console.WriteLine("Enter the elements of the array:");
+for (int i = 0; i < rows; i++)
+{
+    for (int j = 0; j < cols; j++)
+    {
+        array[i, j] = int.Parse(Console.ReadLine());
+    }
+}
+
+int sum = 0;
+for (int i = 0; i < rows; i++)
+{
+    for (int j = 0; j < cols; j++)
+    {
+        sum += array[i, j];
+    }
+}
+
+Console.WriteLine("The sum of all elements in the array is: " + sum);
+```
+---
+
+## 22. Find the sum of each row in a 2D array.
+
+```sharp
+Console.WriteLine("Enter number of rows:");
+int rows = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Enter number of columns:");
+int cols = int.Parse(Console.ReadLine());
+
+int[,] array = new int[rows, cols];
+
+Console.WriteLine("Enter the elements of the array:");
+for (int i = 0; i < rows; i++)
+{
+    for (int j = 0; j < cols; j++)
+    {
+        array[i, j] = int.Parse(Console.ReadLine());
+    }
+}
+
+for (int i = 0; i < rows; i++)
+{
+    int rowSum = 0;
+    for (int j = 0; j < cols; j++)
+    {
+        rowSum += array[i, j];
+    }
+    Console.WriteLine("The sum of elements in row " + (i + 1) + " is: " + rowSum);
+}
+```
+---
+
+
+## 23. Find the sum of each column in a 2D array.
+
+```sharp
+Console.WriteLine("Enter number of rows:");
+int rows = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Enter number of columns:");
+int cols = int.Parse(Console.ReadLine());
+
+int[,] array = new int[rows, cols];
+
+Console.WriteLine("Enter the elements of the array:");
+for (int i = 0; i < rows; i++)
+{
+    for (int j = 0; j < cols; j++)
+    {
+        array[i, j] = int.Parse(Console.ReadLine());
+    }
+}
+
+for (int j = 0; j < cols; j++)
+{
+    int colSum = 0;
+    for (int i = 0; i < rows; i++)
+    {
+        colSum += array[i, j];
+    }
+    Console.WriteLine("The sum of elements in column " + (j + 1) + " is: " + colSum);
+}
+```
+---
+
+
+## 24. Find the largest element in a 2D array.
+
+```sharp
+Console.WriteLine("Enter number of rows:");
+int rows = int.Parse(Console.ReadLine());
+
+Console.WriteLine("Enter number of columns:");
+int cols = int.Parse(Console.ReadLine());
+
+int[,] array = new int[rows, cols];
+
+Console.WriteLine("Enter the elements of the array:");
+for (int i = 0; i < rows; i++)
+{
+    for (int j = 0; j < cols; j++)
+    {
+        array[i, j] = int.Parse(Console.ReadLine());
+    }
+}
+
+int largest = array[0, 0];
+for (int i = 0; i < rows; i++)
+{
+    for (int j = 0; j < cols; j++)
+    {
+        if (array[i, j] > largest)
+        {
+            largest = array[i, j];
+        }
+    }
+}
+
+Console.WriteLine("The largest element in the 2D array is: " + largest);
+```
+---
+
+## 25. Find the sum of primary and secondary diagonals of a square matrix.
+
+```sharp
+Console.WriteLine("Enter the size of the square matrix:");
+int n = int.Parse(Console.ReadLine());
+
+int[,] matrix = new int[n, n];
+
+Console.WriteLine("Enter the elements of the matrix:");
+for (int i = 0; i < n; i++)
+{
+    for (int j = 0; j < n; j++)
+    {
+        matrix[i, j] = int.Parse(Console.ReadLine());
+    }
+}
+
+int primaryDiagonalSum = 0;
+int secondaryDiagonalSum = 0;
+for (int i = 0; i < n; i++)
+{
+    primaryDiagonalSum += matrix[i, i];
+    secondaryDiagonalSum += matrix[i, n - 1 - i];
+}
+
+Console.WriteLine("Sum of primary diagonal: " + primaryDiagonalSum);
+Console.WriteLine("Sum of secondary diagonal: " + secondaryDiagonalSum);
+```
 ---
