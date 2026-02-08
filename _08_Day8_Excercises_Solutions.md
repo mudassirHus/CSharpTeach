@@ -307,3 +307,158 @@ else
 ```
 
 ---
+
+## 14. Find frequency of each character in a string.
+
+```sharp
+Console.WriteLine("Enter a string:");
+string input = Console.ReadLine();
+
+bool[] visited = new bool[input.Length];
+
+for (int i = 0; i < input.Length; i++)
+{
+    if (visited[i])
+        continue;
+
+    int count = 1;
+
+    for (int j = i + 1; j < input.Length; j++)
+    {
+        if (input[i] == input[j])
+        {
+            count++;
+            visited[j] = true;
+        }
+    }
+
+    Console.WriteLine($"'{input[i]}' : {count}");
+}
+
+```
+
+---
+
+## 15. Remove duplicate characters from a string.
+
+```sharp
+Console.WriteLine("Enter a string:");
+string input = Console.ReadLine();
+
+string result = "";
+
+for (int i = 0; i < input.Length; i++)
+{
+    bool isDuplicate = false;
+
+    for (int j = 0; j < i; j++)
+    {
+        if (input[i] == input[j])
+        {
+            isDuplicate = true;
+            break;
+        }
+    }
+
+    if (!isDuplicate)
+    {
+        result += input[i];
+    }
+}
+
+Console.WriteLine("After removing duplicates:");
+Console.WriteLine(result);
+
+```
+
+---
+
+## 16. Count number of words in a sentence.
+
+```sharp
+Console.WriteLine("Enter a sentence:");
+string input = Console.ReadLine();
+
+int count = 1;
+
+for (int i = 0; i < input.Length; i++)
+{
+    if (input[i] == ' ')
+        count++;
+}
+
+Console.WriteLine("Number of words: " + count);
+
+```
+
+---
+
+## 17. Reverse each word in a sentence.
+
+```sharp
+Console.WriteLine("Enter a sentence:");
+string input = Console.ReadLine();
+
+string result = "";
+string word = "";
+
+for (int i = 0; i < input.Length; i++)
+{
+    if (input[i] != ' ')
+    {
+        word = input[i] + word;
+    }
+    else
+    {
+        result += word + " ";
+        word = "";
+    }
+}
+
+// add the last word
+result += word;
+
+Console.WriteLine("Output:");
+Console.WriteLine(result);
+
+```
+
+---
+
+## 18. Find the longest word in a sentence.
+
+```sharp
+Console.WriteLine("Enter a sentence:");
+string input = Console.ReadLine();
+
+string longestWord = "";
+string currentWord = "";
+
+for (int i = 0; i < input.Length; i++)
+{
+    if (input[i] != ' ')
+    {
+        currentWord += input[i];
+    }
+    else
+    {
+        if (currentWord.Length > longestWord.Length)
+        {
+            longestWord = currentWord;
+        }
+        currentWord = "";
+    }
+}
+
+// check last word
+if (currentWord.Length > longestWord.Length)
+{
+    longestWord = currentWord;
+}
+
+Console.WriteLine("Longest word: " + longestWord);
+Console.WriteLine("Length: " + longestWord.Length);
+
+```
+
+---
