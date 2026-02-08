@@ -7,7 +7,7 @@
 - Use loops (`for`, `while`, `foreach`) where required
 - Use conditional statements as needed
 - Use `Console.ReadLine()` for input
-- Use `Console.WriteLine()` for output
+- Use `Console.WriteLine()` or  `Console.Write()` for output
 - ❌ Avoid built-in helpers like:
   - `Split`
   - `Replace`
