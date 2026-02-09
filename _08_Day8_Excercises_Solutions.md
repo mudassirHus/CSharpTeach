@@ -2,7 +2,7 @@
 
 ---
 
-# Phase 1: Very Basic 1D Array
+# Phase 1: Very Basic String Handling
 
 ---
 
@@ -460,8 +460,6 @@ Console.WriteLine("Longest word: " + longestWord);
 Console.WriteLine("Length: " + longestWord.Length);
 
 ```
-
----
 
 ---
 
