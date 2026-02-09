@@ -462,3 +462,61 @@ Console.WriteLine("Length: " + longestWord.Length);
 ```
 
 ---
+
+---
+
+## 19. Check whether two strings are anagrams.
+
+```sharp
+Console.WriteLine("Enter first string:");
+string s1 = Console.ReadLine();
+
+Console.WriteLine("Enter second string:");
+string s2 = Console.ReadLine();
+
+bool isAnagram = true;
+
+// length check
+if (s1.Length != s2.Length)
+{
+    isAnagram = false;
+}
+else
+{
+    char[] arr2 = new char[s2.Length];
+
+    // copy s2 into array
+    for (int i = 0; i < s2.Length; i++)
+    {
+        arr2[i] = s2[i];
+    }
+
+    // compare characters
+    for (int i = 0; i < s1.Length; i++)
+    {
+        bool found = false;
+
+        for (int j = 0; j < arr2.Length; j++)
+        {
+            if (s1[i] == arr2[j])
+            {
+                found = true;
+                arr2[j] = '#'; // mark used
+                break;
+            }
+        }
+
+        if (!found)
+        {
+            isAnagram = false;
+            break;
+        }
+    }
+}
+
+if (isAnagram)
+    Console.WriteLine("Anagram");
+else
+    Console.WriteLine("Not Anagram");
+```
+---
