@@ -637,3 +637,129 @@ Console.WriteLine("The numbers extracted from the mixed string are:");
 Console.WriteLine(result);
 ```
 ---
+
+---
+
+## 24. Find the most frequent word in a paragraph.
+
+```sharp
+Console.WriteLine("Enter paragraph:");
+string input = Console.ReadLine();
+
+string[] words = new string[200];
+int wordCount = 0;
+string current = "";
+
+// extract words manually
+for (int i = 0; i < input.Length; i++)
+{
+    if (input[i] != ' ')
+    {
+        current += input[i];
+    }
+    else
+    {
+        if (current != "")
+        {
+            words[wordCount] = current;
+            wordCount++;
+            current = "";
+        }
+    }
+}
+
+// last word
+if (current != "")
+{
+    words[wordCount] = current;
+    wordCount++;
+}
+
+// find most frequent word
+int max = 0;
+string maxWord = "";
+
+for (int i = 0; i < wordCount; i++)
+{
+    if (words[i] == "#")
+        continue;
+
+    int count = 1;
+
+    for (int j = i + 1; j < wordCount; j++)
+    {
+        if (words[i] == words[j])
+        {
+            count++;
+            words[j] = "#";
+        }
+    }
+
+    if (count > max)
+    {
+        max = count;
+        maxWord = words[i];
+    }
+}
+
+Console.WriteLine("Most frequent word: " + maxWord);
+Console.WriteLine("Frequency: " + max);
+```
+
+---
+
+## 25. Validate an email address using basic rules.
+
+```sharp
+Console.WriteLine("Enter email:");
+string email = Console.ReadLine();
+
+bool hasAt = false;
+bool hasDot = false;
+bool valid = true;
+
+int atIndex = -1;
+int dotIndex = -1;
+
+// check first character
+if (email[0] == '@')
+    valid = false;
+
+// check last character
+if (email[email.Length - 1] == '.')
+    valid = false;
+
+for (int i = 0; i < email.Length; i++)
+{
+    if (email[i] == '@')
+    {
+        if (hasAt == true) // more than one @
+        {
+            valid = false;
+        }
+        hasAt = true;
+        atIndex = i;
+    }
+
+    if (email[i] == '.')
+    {
+        hasDot = true;
+        dotIndex = i;
+    }
+}
+
+// must contain @ and .
+if (!hasAt || !hasDot)
+    valid = false;
+
+// @ must come before .
+if (atIndex > dotIndex)
+    valid = false;
+
+if (valid)
+    Console.WriteLine("Valid email");
+else
+    Console.WriteLine("Invalid email");
+```
+
+---
