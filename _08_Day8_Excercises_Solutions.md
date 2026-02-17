@@ -518,3 +518,122 @@ else
     Console.WriteLine("Not Anagram");
 ```
 ---
+
+## 20. Convert first letter of each word to uppercase.
+
+```sharp
+Console.WriteLine("Enter a string:"); 
+string str = Console.ReadLine();
+
+string result = "";
+
+for (int i = 0; i < str.Length; i++)
+{
+    if (i == 0 || str[i - 1] == ' ')
+    {
+        result += (char)(str[i] - 32);
+    }
+    else
+    {
+        result += str[i];
+    }
+}
+
+Console.WriteLine(result);
+```
+
+---
+
+## 21. Perform basic string compression.
+
+```sharp
+Console.WriteLine("Enter a string:");
+string str = Console.ReadLine();
+
+string result = "";
+int count = 1;
+
+for (int i = 0; i < str.Length; i++)
+{
+    if (i < str.Length - 1 && str[i] == str[i + 1])
+    {
+        count++;
+    }
+    else
+    {
+        result += str[i] + count.ToString();
+        count = 1;
+    }
+}
+
+Console.WriteLine(result);
+```
+
+---
+
+## 22. Check whether a string is a valid variable name identifier.
+
+```sharp
+Console.WriteLine("Enter a variable name:");
+string str = Console.ReadLine();
+
+bool isValid = true;
+
+if (str.Length == 0)
+{
+    isValid = false;
+}
+else
+{
+    // first character
+    if (!((str[0] >= 'a' && str[0] <= 'z') ||
+          (str[0] >= 'A' && str[0] <= 'Z') ||
+           str[0] == '_'))
+    {
+        isValid = false;
+    }
+
+    // remaining characters
+    for (int i = 1; i < str.Length && isValid; i++)
+    {
+        if (!((str[i] >= 'a' && str[i] <= 'z') ||
+              (str[i] >= 'A' && str[i] <= 'Z') ||
+              (str[i] >= '0' && str[i] <= '9') ||
+               str[i] == '_'))
+        {
+            isValid = false;
+        }
+    }
+}
+
+if (isValid)
+{
+    Console.WriteLine("The string is a valid variable name identifier.");
+}
+else
+{
+    Console.WriteLine("The string is not a valid variable name identifier.");
+}
+```
+
+---
+
+## 23. Extract numbers from a mixed string.
+
+```sharp
+Console.WriteLine("Enter a mixed string:");
+string str = Console.ReadLine();
+
+string result = "";
+for (int i = 0; i < str.Length; i++)
+{
+    if (str[i] >= '0' && str[i] <= '9')
+    {
+        result += str[i];
+    }
+}
+
+Console.WriteLine("The numbers extracted from the mixed string are:");
+Console.WriteLine(result);
+```
+---
