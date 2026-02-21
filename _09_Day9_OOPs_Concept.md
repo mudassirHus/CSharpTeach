@@ -210,3 +210,61 @@ This makes development easier and logical.
 Modern software mostly uses OOP.
 
 ---
+
+## 9. Why C# Strongly Uses OOP
+
+C# was created by Microsoft to build:
+
+- Windows applications  
+- Web applications  
+- Enterprise software  
+- Game development (Unity)  
+- Business systems  
+
+Such systems require:
+- Security  
+- Structure  
+- Reusability  
+- Team development  
+
+OOP supports all these.  
+So C# is designed as a strongly object-oriented language.
+
+Almost everything in C# revolves around objects.
+
+---
+
+## 10. Where OOP is Used in Real Life?
+
+OOP is used everywhere:
+
+### Banking Applications
+- Account
+- Customer
+- Transaction
+
+### Games
+- Player
+- Enemy
+- Weapon
+- Level
+
+### Shopping Apps
+- Product
+- Cart
+- Order
+- User
+
+### Mobile Apps
+- Screen
+- Settings
+- User data
+
+### Company Software
+- Employee
+- Salary
+- Department
+
+Every big system uses OOP.
+
+---
