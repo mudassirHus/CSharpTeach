@@ -40,7 +40,7 @@ That solution became **Object-Oriented Programming (OOP)**.
 
 ## 3. Basic Idea Behind OOP
 
-Main idea of OOP:
+OOP:
 
 > Break a big problem into small manageable objects.
 
