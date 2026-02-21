@@ -148,3 +148,65 @@ OOP was created to achieve:
 - Scalability (program can grow easily)  
 
 ---
+## 7. Why OOP Became So Popular?
+
+### 1. Handles Large Projects
+Used in:
+- Banking systems
+- Social media
+- Games
+- Enterprise software
+
+Large systems need structure → OOP provides it.
+
+---
+
+### 2. Code Reusability
+Once you create a model (like Employee or Student),  
+you can reuse it many times.
+
+Saves time and effort.
+
+---
+
+### 3. Easy Debugging
+If an error occurs, check only that object  
+instead of whole program.
+
+---
+
+### 4. Teamwork Friendly
+In companies:
+- One developer works on login
+- One on payment
+- One on dashboard
+
+OOP allows dividing work easily.
+
+---
+
+### 5. Real-World Mapping
+Software becomes similar to real-world systems.  
+This makes development easier and logical.
+
+---
+
+## 8. Procedural Programming vs OOP
+
+### Procedural Programming
+- Focus on functions  
+- Step-by-step instructions  
+- Hard for large programs  
+- Less secure  
+- Difficult maintenance  
+
+### Object-Oriented Programming
+- Focus on objects  
+- Real-world modeling  
+- More secure  
+- Easy maintenance  
+- Best for large applications  
+
+Modern software mostly uses OOP.
+
+---
